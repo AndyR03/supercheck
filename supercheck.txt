@@ -1,0 +1,9 @@
+FROM debian:stable
+
+LABEL author=AndyRose
+LABEL e‐mail=
+
+RUN apt update && \
+apt install ‐y netcat telnet traceroute libcap‐ng‐utils curl wget tcpdump ssldump rsync procps fping lsof nmap htop strace net‐tools && apt clean
+
+CMD bash 
